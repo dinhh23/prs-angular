@@ -28,8 +28,16 @@ export class UserDetailComponent implements OnInit {
       err => { console.error("Error removing user: ", err); }
     );
   }
-  
+
   ngOnInit(): void {
+    let id = +this.route.snapshot.params.id;
+    this.usersvc.get(id).subscribe(
+      res => {
+        console.debug("User:", res);
+        this.user = res;
+      },
+      err => { console.error(err); }
+    );
   }
 
 }

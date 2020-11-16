@@ -1,55 +1,60 @@
 <app-menu></app-menu>
-<h3>User Detail</h3>
+<h3>[User Detail]</h3>
 
 
 <table *ngIf="user" class="table table-bordered table-dark">
     <tr>
-        <th>UserName</th>
+        <td>Id</td>
         <td>
-            <input [(ngModel)]="user.id" disable type="text" size="15">
+            <input [(ngModel)]="user.id" type="text" disabled>
         </td>
     </tr>
     <tr>
+        <th>UserName</th>
+        <td>
+            <input [(ngModel)]="user.userName" type="text" disabled>
+        </td>
+    </tr>
     <tr>
         <th>PassWord</th>
         <td>
-            <input [(ngModel)]="user.password" disable type="password" size="15">
+            <input [(ngModel)]="user.passWord" type="password" disabled>
         </td>
     </tr>
     <tr>
         <th>FirstName</th>
         <td>
-            <input [(ngModel)]="user.firstName" disable type="text" size="15">
+            <input [(ngModel)]="user.firstName" type="text" disabled>
         </td>
     </tr>
     <tr>
         <th>LastName</th>
         <td>
-            <input [(ngModel)]="user.lastName" disable type="text" size="15">
+            <input [(ngModel)]="user.lastName" type="text" disabled>
         </td>
     </tr>
     <tr>
         <th>PhoneNumber</th>
         <td>
-            <input [(ngModel)]="user.phoneNumber" disable type="text" size="15">
+            <input [(ngModel)]="user.phoneNumber" type="text" disabled>
         </td>
     </tr>
     <tr>
         <th>Email</th>
         <td>
-            <input [(ngModel)]="user.email" disable type="text" size="15">
+            <input [(ngModel)]="user.email" type="text" disabled>
         </td>
     </tr>
     <tr>
         <th>Reviewer</th>
         <td>
-            <input [(ngModel)]="user.reviewer"  disable type="checkbox" size="15">
+            <input [(ngModel)]="user.reviewer" type="checkbox" disabled>
         </td>
     </tr>
     <tr>
         <th>Admin</th>
         <td>
-            <input [(ngModel)]="user.admin" disable type="checkbox" size="15">
+            <input [(ngModel)]="user.admin" type="checkbox" disabled>
         </td>
     </tr>
     
