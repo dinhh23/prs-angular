@@ -15,6 +15,7 @@ import { ProductsComponent } from './product/products/products.component';
 import { RequestsComponent } from './request/requests/requests.component';
 import { LineitemsComponent } from './lineitem/lineitems/lineitems.component';
 import { UserListComponent } from './user/user-list/user-list.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
 
 
 
@@ -34,6 +35,7 @@ import { UserListComponent } from './user/user-list/user-list.component';
     RequestsComponent,
     LineitemsComponent,
     UserListComponent,
+    UserDetailComponent,
     
   
     

@@ -1,5 +1,6 @@
-<p>user-detail works!</p>
-<h3>User Edit</h3>
+<app-menu></app-menu>
+<h3>User Detail</h3>
+
 
 <table *ngIf="user" class="table table-bordered table-dark">
     <tr>
@@ -18,45 +19,46 @@
     <tr>
         <th>FirstName</th>
         <td>
-            <input [(ngModel)]="user.firstName" type="text" size="15">
+            <input [(ngModel)]="user.firstName" disable type="text" size="15">
         </td>
     </tr>
     <tr>
         <th>LastName</th>
         <td>
-            <input [(ngModel)]="user.lastName" type="text" size="15">
+            <input [(ngModel)]="user.lastName" disable type="text" size="15">
         </td>
     </tr>
     <tr>
         <th>PhoneNumber</th>
         <td>
-            <input [(ngModel)]="user.phoneNumber" type="text" size="15">
+            <input [(ngModel)]="user.phoneNumber" disable type="text" size="15">
         </td>
     </tr>
     <tr>
         <th>Email</th>
         <td>
-            <input [(ngModel)]="user.email" type="text" size="15">
+            <input [(ngModel)]="user.email" disable type="text" size="15">
         </td>
     </tr>
     <tr>
         <th>Reviewer</th>
         <td>
-            <input [(ngModel)]="user.reviewer" type="checkbox" size="15">
+            <input [(ngModel)]="user.reviewer"  disable type="checkbox" size="15">
         </td>
     </tr>
     <tr>
         <th>Admin</th>
         <td>
-            <input [(ngModel)]="user.admin" type="checkbox" size="15">
+            <input [(ngModel)]="user.admin" disable type="checkbox" size="15">
         </td>
     </tr>
     
     <tr>
         
         <td colspan="2">
-            <button (click)="delete()" class="btn btn-warning">Delete</button>
+            <button (click)="delete()" class="btn btn-danger">Delete</button>
         </td>
     </tr>
     
 </table>
+
