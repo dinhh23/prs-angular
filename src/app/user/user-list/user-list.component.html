@@ -1,0 +1,26 @@
+
+<app-menu></app-menu>
+
+<table class="table table-bordered table-dark">
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>PhoneNumber</th>
+        <th>Email</th>
+        <th>Reviewer</th>
+        <th>Admin</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{ user.userName }} </td>
+        <td>{{ user.passWord }} </td>
+        <td>{{ user.firstName }} </td>
+        <td>{{ user.lastName }} </td>
+        <td>{{ user.phoneNumber }} </td>
+        <td>{{ user.email }} </td>
+        <td>{{ user.reviewer }} </td>
+        <td>{{ user.admin }} </td>
+        
+    </tr>
+</table>
