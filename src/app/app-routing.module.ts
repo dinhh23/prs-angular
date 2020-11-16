@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './core/about/about.component';
 import { E404Component } from './core/e404/e404.component';
 import { HomeComponent } from './core/home/home.component';
-import { UsersComponent } from './user/users/users.component';
 import { VendorsComponent } from './vendor/vendors/vendors.component';
 import { ProductsComponent } from './product/products/products.component';
 import { RequestsComponent } from './request/requests/requests.component';
