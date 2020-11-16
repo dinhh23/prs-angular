@@ -1,0 +1,62 @@
+<p>user-detail works!</p>
+<h3>User Edit</h3>
+
+<table *ngIf="user" class="table table-bordered table-dark">
+    <tr>
+        <th>UserName</th>
+        <td>
+            <input [(ngModel)]="user.id" disable type="text" size="15">
+        </td>
+    </tr>
+    <tr>
+    <tr>
+        <th>PassWord</th>
+        <td>
+            <input [(ngModel)]="user.password" disable type="password" size="15">
+        </td>
+    </tr>
+    <tr>
+        <th>FirstName</th>
+        <td>
+            <input [(ngModel)]="user.firstName" type="text" size="15">
+        </td>
+    </tr>
+    <tr>
+        <th>LastName</th>
+        <td>
+            <input [(ngModel)]="user.lastName" type="text" size="15">
+        </td>
+    </tr>
+    <tr>
+        <th>PhoneNumber</th>
+        <td>
+            <input [(ngModel)]="user.phoneNumber" type="text" size="15">
+        </td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>
+            <input [(ngModel)]="user.email" type="text" size="15">
+        </td>
+    </tr>
+    <tr>
+        <th>Reviewer</th>
+        <td>
+            <input [(ngModel)]="user.reviewer" type="checkbox" size="15">
+        </td>
+    </tr>
+    <tr>
+        <th>Admin</th>
+        <td>
+            <input [(ngModel)]="user.admin" type="checkbox" size="15">
+        </td>
+    </tr>
+    
+    <tr>
+        
+        <td colspan="2">
+            <button (click)="delete()" class="btn btn-warning">Delete</button>
+        </td>
+    </tr>
+    
+</table>
