@@ -30,4 +30,13 @@ change(user: User): Observable<User> {
   return this.http.put(`${baseurl}${user.id}`, user) as Observable<User>;
 }
 
+// Add
+create(user: User): Observable<User> {
+  return this.http.post(`${baseurl}`, user) as Observable<User>;
+}
+
+// Delete
+remove(user: User): Observable<User> {
+  return this.http.delete(`${baseurl}${user.id}`) as Observable<User>;
+}
 }
