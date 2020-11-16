@@ -1,0 +1,16 @@
+li {
+    display: inline-block;
+    
+}
+
+a {
+    color: silver;
+    text-decoration: none;
+    padding: 0 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
