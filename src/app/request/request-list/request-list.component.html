@@ -10,7 +10,7 @@
 <table class="table table-bordered table-dark">
     <tr>
         <th>Id</th>
-        <th>User</th>
+        <th>UserName</th>
         <th>Description</th>
         <th>Justification</th>
         <th>DateNeeded</th>
@@ -23,7 +23,7 @@
     </tr>
     <tr *ngFor="let request of requests">
         <td>{{ request.id }}</td>
-        <td>{{ request.user.name }} </td>
+        <td>{{ request.user.userName }} </td>
         <td>{{ request.description }} </td>
         <td>{{ request.justification }} </td>
         <td>{{ request.dateNeeded }} </td>

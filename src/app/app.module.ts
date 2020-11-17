@@ -24,6 +24,8 @@ import { ProductDetailComponent } from './product/product-detail/product-detail.
 import { ProductEditComponent } from './product/product-edit/product-edit.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
 import { RequestListComponent } from './request/request-list/request-list.component';
+import { RequestDetailComponent } from './request/request-detail/request-detail.component';
+import { RequestEditComponent } from './request/request-edit/request-edit.component';
 
 
 
@@ -52,6 +54,8 @@ import { RequestListComponent } from './request/request-list/request-list.compon
     ProductEditComponent,
     ProductCreateComponent,
     RequestListComponent,
+    RequestDetailComponent,
+    RequestEditComponent,
     
     
   

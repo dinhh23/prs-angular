@@ -1,0 +1,79 @@
+
+
+
+
+<app-menu></app-menu>
+<h3>[Request Detail]</h3>
+
+
+<table *ngIf="request" class="table table-bordered table-dark">
+    <tr>
+        <td>Id</td>
+        <td>
+            <input [(ngModel)]="request.id" type="text" disabled>
+        </td>
+    </tr>
+    <tr>
+        <th>UserName</th>
+        <td>
+            <input [(ngModel)]="request.user.userName" type="text" disabled>
+        </td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>
+            <input [(ngModel)]="request.description" type="text" size="30">
+        </td>
+    </tr>
+    <tr>
+        <th>Justification</th>
+        <td>
+            <input [(ngModel)]="request.justification" type="text" size="30">
+        </td>
+    </tr>
+    <tr>
+        <th>DateNeeded</th>
+        <td>
+            <input [(ngModel)]="request.dateNeeded" type="text" size="30">
+        </td>
+    </tr>
+    <tr>
+        <th>DeliveryMode</th>
+        <td>
+            <input [(ngModel)]="request.deliveryMode" type="text" size="30">
+        </td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td>
+            <input [(ngModel)]="request.status" type="text" disabled>
+        </td>
+    </tr>
+    <tr>
+        <th>Total</th>
+        <td>
+            <input [(ngModel)]="request.total" type="text" disabled>
+        </td>
+    </tr>
+    <tr>
+        <th>SubmittedDate</th>
+        <td>
+            <input [(ngModel)]="request.submittedDate" type="text" disabled>
+        </td>
+    </tr>
+    <tr>
+        <th>ReasonForRejection</th>
+        <td>
+            <input [(ngModel)]="request.reasonForRejection" type="text" disabled>
+        </td>
+    </tr>
+    
+    <tr>
+        
+        <td colspan="2">
+            <button (click)="save()" class="btn btn-success">Save</button>
+        </td>
+    </tr>
+    
+</table>
+
