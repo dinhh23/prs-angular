@@ -16,6 +16,7 @@ import { VendorEditComponent } from './vendor/vendor-edit/vendor-edit.component'
 import { VendorCreateComponent } from './vendor/vendor-create/vendor-create.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
+import { ProductEditComponent } from './product/product-edit/product-edit.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full"},
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: "vendors/edit/:id", component: VendorEditComponent},
   { path: "products/list", component: ProductListComponent },
   { path: "products/detail/:id", component: ProductDetailComponent },
+  { path: "products/edit/:id", component: ProductEditComponent },
   { path: "requests", component: RequestsComponent },
   { path: "about", component: AboutComponent },
   { path: "**", component: E404Component }
