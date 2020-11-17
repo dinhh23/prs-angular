@@ -18,6 +18,17 @@ export class VendorDetailComponent implements OnInit {
     private router: Router
   ) { }
 
+  delete(): void {
+    console.log(this.vendor);
+    this.vendorsvc.remove(this.vendor).subscribe (
+      res => {
+        console.debug("Vendor Remove:", res);
+        this.router.navigateByUrl("/vendors/list");
+      },
+      err => { console.error("Error deleting vendor: ", err); }
+    );
+  }
+
   ngOnInit(): void {
     let id = +this.route.snapshot.params.id;
     this.vendorsvc.get(id).subscribe(
