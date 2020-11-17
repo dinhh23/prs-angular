@@ -12,7 +12,13 @@
     <tr>
         <th>Vendor</th>
         <td>
-            <input [(ngModel)]="product.vendor" type="text" disabled>
+            <select [(ngModel)]="product.vendor">
+                <option *ngFor = "let vendor of vendors" [ngValue]="vendor">{{vendor.name}}
+
+                
+            <!-- <input [(ngModel)]="product.vendor" type="text"> -->
+            </option>
+        </select>
         </td>
     </tr>
     <tr>
