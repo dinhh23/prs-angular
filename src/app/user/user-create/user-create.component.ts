@@ -23,7 +23,7 @@ export class UserCreateComponent implements OnInit {
     console.log(this.user);
     this.usersvc.create(this.user).subscribe (
       res => {
-        console.debug("User Created: res");
+        console.debug("User Created:", res);
         this.router.navigateByUrl("/users/list")
       },
       err => { console.error("Error creating user: ", err);}
