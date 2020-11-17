@@ -11,6 +11,7 @@ import { RequestsComponent } from './request/requests/requests.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
+import { UserCreateComponent } from './user/user-create/user-create.component';
 
 
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "users/list", component: UserListComponent },
   { path: "users/detail/:id", component: UserDetailComponent},
+  { path: "users/create", component: UserCreateComponent},
   { path: "users/edit/:id", component: UserEditComponent},
   { path: "vendors", component: VendorsComponent },
   { path: "products", component: ProductsComponent },
