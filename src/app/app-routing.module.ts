@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './core/about/about.component';
 import { E404Component } from './core/e404/e404.component';
 import { HomeComponent } from './core/home/home.component';
-import { VendorsComponent } from './vendor/vendors/vendors.component';
 import { ProductsComponent } from './product/products/products.component';
 import { RequestsComponent } from './request/requests/requests.component';
 
@@ -12,7 +11,7 @@ import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
-
+import { VendorListComponent } from './vendor/vendor-list/vendor-list.component';
 
 
 const routes: Routes = [
@@ -22,7 +21,7 @@ const routes: Routes = [
   { path: "users/detail/:id", component: UserDetailComponent},
   { path: "users/create", component: UserCreateComponent},
   { path: "users/edit/:id", component: UserEditComponent},
-  { path: "vendors", component: VendorsComponent },
+  { path: "vendors/list", component: VendorListComponent },
   { path: "products", component: ProductsComponent },
   { path: "requests", component: RequestsComponent },
   { path: "about", component: AboutComponent },
