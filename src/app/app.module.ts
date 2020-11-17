@@ -21,6 +21,7 @@ import { VendorDetailComponent } from './vendor/vendor-detail/vendor-detail.comp
 import { VendorEditComponent } from './vendor/vendor-edit/vendor-edit.component';
 import { VendorCreateComponent } from './vendor/vendor-create/vendor-create.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 
 
 
@@ -46,6 +47,7 @@ import { ProductListComponent } from './product/product-list/product-list.compon
     VendorEditComponent,
     VendorCreateComponent,
     ProductListComponent,
+    ProductDetailComponent,
     
     
   
