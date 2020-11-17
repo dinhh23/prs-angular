@@ -15,7 +15,10 @@
     <tr>
         <th>Vendor</th>
         <td>
-            <input [(ngModel)]="product.vendor.name" type="text" size="20">
+            <select [(ngModel)]="product.vendor"
+            [compareWith]="compareFn">
+                <option *ngFor = "let vendor of vendors" [ngValue]="vendor">{{vendor.name}}</option>
+            </select>
         </td>
     </tr>
     <tr>

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product.class';
 import { ProductService } from '../product.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Vendor } from 'src/app/vendor/vendor.class'
+import { VendorService } from 'src/app/vendor/vendor.service';
+
 
 
 @Component({
@@ -12,9 +15,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ProductEditComponent implements OnInit {
 
   product: Product;
+  vendors: Vendor[] = [];
 
   constructor(
     private productsvc: ProductService,
+    private vendorsvc: VendorService,
     private route: ActivatedRoute,
     private router: Router
   ) { }
@@ -39,6 +44,12 @@ export class ProductEditComponent implements OnInit {
       },
       err => { console.error(err); }
     );
+    this.vendorsvc.list().subscribe(
+      res => { console.debug(res); this.vendors = res as Vendor[];},
+      res =>{ console.error(res)}
+    )
+    }    
+  compareFn(a: any, b: any): boolean {
+    return a.id === b.id;
   }
-
 }

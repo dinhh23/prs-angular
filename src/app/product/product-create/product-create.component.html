@@ -12,12 +12,8 @@
     <tr>
         <th>Vendor</th>
         <td>
-            <select [(ngModel)]="product.vendor">
-                <option *ngFor = "let vendor of vendors" [ngValue]="vendor">{{vendor.name}}
-
-                
-            <!-- <input [(ngModel)]="product.vendor" type="text"> -->
-            </option>
+            <select [(ngModel)]="product.vendor">               
+                <option *ngFor = "let vendor of vendors" [ngValue]="vendor">{{vendor.name}}</option>
         </select>
         </td>
     </tr>
