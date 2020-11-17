@@ -1,9 +1,6 @@
 
-
-
-
 <app-menu></app-menu>
-    <h3>[Product Edit]</h3>
+<h3>[Product Create]</h3>
 
 <table *ngIf="product" class="table table-bordered table-dark">
     <tr>
@@ -15,7 +12,7 @@
     <tr>
         <th>Vendor</th>
         <td>
-            <input [(ngModel)]="product.vendor.name" type="text" size="20">
+            <input [(ngModel)]="product.vendor" type="text" disabled>
         </td>
     </tr>
     <tr>

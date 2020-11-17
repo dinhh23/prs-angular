@@ -6,8 +6,8 @@ export class Product {
     partNumber: string = "";
     name: string = "";
     price: number = 0
-    unit: string = "";
-    photoPath: string ="";
+    unit: string = "Each";
+    photoPath: string ="Each";
 
     constructor() {
 
