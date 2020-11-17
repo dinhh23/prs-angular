@@ -18,6 +18,16 @@ export class UserEditComponent implements OnInit {
     private router: Router
   ) { }
 
+  save(): void {
+    console.log(this.user);
+    this.usersvc.change(this.user).subscribe (
+      res => {
+        console.debug("User Change:", res);
+        this.router.navigateByUrl("/users/list");
+      },
+      err => { console.error("Error changing user: ", err);}
+    );
+  }
   ngOnInit(): void {
     let id = +this.route.snapshot.params.id;
     this.usersvc.get(id).subscribe(
