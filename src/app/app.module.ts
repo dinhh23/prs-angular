@@ -10,7 +10,6 @@ import { AboutComponent } from './core/about/about.component';
 import { E404Component } from './core/e404/e404.component';
 import { MenuComponent } from './menu/menu/menu.component';
 import { MenuItemComponent } from './menu-item/menu-item/menu-item.component';
-import { RequestsComponent } from './request/requests/requests.component';
 import { LineitemsComponent } from './lineitem/lineitems/lineitems.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
@@ -24,6 +23,7 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { ProductEditComponent } from './product/product-edit/product-edit.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { RequestListComponent } from './request/request-list/request-list.component';
 
 
 
@@ -38,7 +38,6 @@ import { ProductCreateComponent } from './product/product-create/product-create.
     E404Component,
     MenuComponent,
     MenuItemComponent,
-    RequestsComponent,
     LineitemsComponent,
     UserListComponent,
     UserDetailComponent,
@@ -52,6 +51,7 @@ import { ProductCreateComponent } from './product/product-create/product-create.
     ProductDetailComponent,
     ProductEditComponent,
     ProductCreateComponent,
+    RequestListComponent,
     
     
   

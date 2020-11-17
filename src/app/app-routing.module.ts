@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './core/about/about.component';
 import { E404Component } from './core/e404/e404.component';
 import { HomeComponent } from './core/home/home.component';
-import { RequestsComponent } from './request/requests/requests.component';
 
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
@@ -18,6 +17,7 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { ProductEditComponent } from './product/product-edit/product-edit.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { RequestListComponent } from './request/request-list/request-list.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full"},
@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: "products/detail/:id", component: ProductDetailComponent },
   { path: "products/create", component: ProductCreateComponent},
   { path: "products/edit/:id", component: ProductEditComponent },
-  { path: "requests", component: RequestsComponent },
+  { path: "requests/list", component: RequestListComponent },
   { path: "about", component: AboutComponent },
   { path: "**", component: E404Component }
 ];

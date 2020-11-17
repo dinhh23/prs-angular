@@ -1,6 +1,6 @@
 import { User } from '../user/user.class';
 
-export class request {
+export class Request {
     id: number = 0;
     user: User;
     description: string = "";
