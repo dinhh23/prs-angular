@@ -19,6 +19,7 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
 import { VendorListComponent } from './vendor/vendor-list/vendor-list.component';
 import { VendorDetailComponent } from './vendor/vendor-detail/vendor-detail.component';
+import { VendorEditComponent } from './vendor/vendor-edit/vendor-edit.component';
 
 
 
@@ -42,6 +43,7 @@ import { VendorDetailComponent } from './vendor/vendor-detail/vendor-detail.comp
     UserCreateComponent,
     VendorListComponent,
     VendorDetailComponent,
+    VendorEditComponent,
     
     
   

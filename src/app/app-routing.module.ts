@@ -13,6 +13,7 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
 import { VendorListComponent } from './vendor/vendor-list/vendor-list.component';
 import { VendorDetailComponent } from './vendor/vendor-detail/vendor-detail.component';
+import { VendorEditComponent } from './vendor/vendor-edit/vendor-edit.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full"},
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: "users/edit/:id", component: UserEditComponent},
   { path: "vendors/list", component: VendorListComponent },
   { path: "vendors/detail/:id", component: VendorDetailComponent},
+  { path: "vendors/edit/:id", component: VendorEditComponent},
   { path: "products", component: ProductsComponent },
   { path: "requests", component: RequestsComponent },
   { path: "about", component: AboutComponent },
