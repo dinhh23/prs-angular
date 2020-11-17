@@ -23,7 +23,7 @@ export class UserDetailComponent implements OnInit {
     this.usersvc.remove(this.user).subscribe (
       res => {
         console.debug("User Remove:", res);
-        this.router.navigateByUrl("/users/list");
+        this.router.navigateByUrl("users/list");
       },
       err => { console.error("Error removing user: ", err); }
     );
