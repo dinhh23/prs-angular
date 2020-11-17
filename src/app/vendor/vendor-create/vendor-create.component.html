@@ -1,14 +1,14 @@
-
+<p>vendor-create works!</p>
 
 <app-menu></app-menu>
-<h3>[Vendor Edit]</h3>
+<h3>[Vendor Create]</h3>
 
 
 <table *ngIf="vendor" class="table table-bordered table-dark">
     <tr>
         <td>Id</td>
         <td>
-            <input [(ngModel)]="vendor.id" type="text" size="20">
+            <input [(ngModel)]="vendor.id" type="text" disabled>
         </td>
     </tr>
     <tr>
