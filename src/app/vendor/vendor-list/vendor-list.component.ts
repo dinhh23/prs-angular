@@ -10,6 +10,7 @@ import { Vendor } from '../vendor.class'
 export class VendorListComponent implements OnInit {
 
   vendors: Vendor[] = [];
+  
   constructor(
     private vendorsvc: VendorService
   ) { }
