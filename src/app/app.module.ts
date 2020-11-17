@@ -16,6 +16,7 @@ import { RequestsComponent } from './request/requests/requests.component';
 import { LineitemsComponent } from './lineitem/lineitems/lineitems.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 
 
@@ -36,6 +37,7 @@ import { UserDetailComponent } from './user/user-detail/user-detail.component';
     LineitemsComponent,
     UserListComponent,
     UserDetailComponent,
+    UserEditComponent,
     
   
     
