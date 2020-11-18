@@ -1,2 +1,36 @@
-<p>home works!</p>
+
 <app-menu></app-menu>
+
+<h3>Welcome to the PRS Application</h3>
+
+
+<table class="table table-sm table-striped" *ngIf='user'>
+    <tr>
+        <td>Id</td>
+        <td>{{ user.id}}</td>
+    </tr>
+    <tr>
+        <td>UserName</td>
+        <td>{{ user.userName }}</td>
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td>{{ user.firstName }}</td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td>{{ user.lastName }}</td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td>{{ user.phoneNumber }}</td>
+    </tr>
+    <tr>
+        <td>Admin</td>
+        <td>{{ user.admin ? "Yes" : "No" }}</td>
+    </tr>
+    <tr>
+      <td>From Syssvs.isAdmin()</td>
+      <td>{{ sysSvc.isAdmin() }}</td>
+  </tr>
+</table>

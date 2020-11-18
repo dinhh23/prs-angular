@@ -1,16 +1,16 @@
-<p>user-login works!</p>
+<h1>Log in to PRS</h1>
 
-<table class="table table-bordered table-dark">
+<table *ngIf="username&&password" class="table table-bordered table-dark">
     <tr>
         <th>Username</th>
         <td>
-            <input [(ngModel)]="user.userName" type="text" size="15" placeholder="Username">
+            <input [(ngModel)]="username" type="text" size="15" placeholder="Username">
         </td>
     </tr>
     <tr>
         <th>Password</th>
         <td>
-            <input [(ngModel)]="user.passWord" type="password" size="15" placeholder="Password">
+            <input [(ngModel)]="password" type="password" size="15" placeholder="Password">
         </td>
     </tr>
     <tr>

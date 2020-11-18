@@ -12,7 +12,9 @@ import { SystemService } from 'src/app/core/system.service';
 export class UserLoginComponent implements OnInit {
 
   message: string = "";
-  user: User = new User();
+  username: string = "";
+  password: string = "";
+  user: User = null;
 
   constructor(
     private usersvc: UserService,
@@ -21,21 +23,26 @@ export class UserLoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    // default username/password so we dont have to login every time
+    this.username = "hdinh";
+    this.password = "dog";
+    this.systemsvc.loggedInUser = null; // clear out logged in user
   }
 
   login(): void {
     console.log(this.user);
-    this.usersvc.login(this.user.userName, this.user.passWord).subscribe(
+    this.usersvc.login(this.username, this.password).subscribe(
       res => {
-        this.systemsvc.loggedInUser = res;
-        console.debug("User Logged In:", res);
+        console.log("User Logged In:", res);
+        this.user = res as User;  
+        this.systemsvc.loggedInUser = res;             
         this.router.navigateByUrl("/home");
       },
       
       err => { 
         console.error(err);
         this.message ="Invalid Username/Password. Please Try Again!!!";
-        this.systemsvc.loggedInUser = null; }
+        }
     );
   }
 }

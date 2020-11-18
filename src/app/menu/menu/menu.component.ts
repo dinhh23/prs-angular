@@ -15,7 +15,8 @@ export class MenuComponent implements OnInit {
     new MenuItem("Vendor", "/vendors/list", "Vendors List"),
     new MenuItem("Product", "/products/list", "Products List"),
     new MenuItem("Request", "/requests/list", "Requests List"),
-    new MenuItem("About", "/about", "About Page")
+    new MenuItem("About", "/about", "About Page"),
+  
   ]
   constructor() { }
 
