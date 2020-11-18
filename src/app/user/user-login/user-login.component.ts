@@ -23,7 +23,7 @@ export class UserLoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // default username/password so we dont have to login every time
+    // default username/password so we dont have to login everytime while testing
     this.username = "hdinh";
     this.password = "dog";
     this.systemsvc.loggedInUser = null; // clear out logged in user
@@ -35,7 +35,7 @@ export class UserLoginComponent implements OnInit {
       res => {
         console.log("User Logged In:", res);
         this.user = res as User;  
-        this.systemsvc.loggedInUser = res;             
+        this.systemsvc.loggedInUser = this.user;             
         this.router.navigateByUrl("/home");
       },
       
