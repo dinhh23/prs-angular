@@ -21,10 +21,13 @@ import { RequestListComponent } from './request/request-list/request-list.compon
 import { RequestDetailComponent } from './request/request-detail/request-detail.component';
 import { RequestEditComponent } from './request/request-edit/request-edit.component';
 import { RequestCreateComponent } from './request/request-create/request-create.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
+
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full"},
   { path: "home", component: HomeComponent },
+  { path: "users/login", component: UserLoginComponent},
   { path: "users/list", component: UserListComponent },
   { path: "users/detail/:id", component: UserDetailComponent},
   { path: "users/create", component: UserCreateComponent},

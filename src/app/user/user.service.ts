@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from './user.class';
 
+
 const baseurl: string = "http://localhost:8080/api/users/"
 
 @Injectable({
@@ -38,5 +39,10 @@ create(user: User): Observable<User> {
 // Delete
 remove(user: User): Observable<User> {
   return this.http.delete(`${baseurl}${user.id}`) as Observable<User>;
+}
+
+// login
+login(userName: string, passWord: string): Observable<User> {
+  return this.http.get(`${baseurl}${userName}/${passWord}`) as Observable<User>;
 }
 }
