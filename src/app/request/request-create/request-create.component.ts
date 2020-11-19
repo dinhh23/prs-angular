@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Request } from '../request.class';
 import { RequestService } from '../request.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { User } from '../../user/user.class';
+import { SystemService } from '../../core/system.service'
 
 @Component({
   selector: 'app-request-create',
@@ -11,11 +13,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class RequestCreateComponent implements OnInit {
 
   request: Request = new Request();
+  loggedInUser: User = this.systemsvc.loggedInUser;
   
 
   constructor(
     private requestsvc: RequestService,
-    private route: ActivatedRoute,
+    private systemsvc: SystemService,
     private router: Router
   ) { }
 
@@ -30,6 +33,9 @@ export class RequestCreateComponent implements OnInit {
     )
   }
   ngOnInit(): void {
+    this.systemsvc.checkLogin();
+    this.request.user = this.systemsvc.loggedInUser;
+
     
   }
 

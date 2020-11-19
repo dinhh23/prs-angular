@@ -5,18 +5,18 @@
 
 
 <table *ngIf="request" class="table table-bordered table-dark">
-    <tr>
-        <td>Id</td>
+    <!--<tr>
+    <td>Id</td>
         <td>
             <input [(ngModel)]="request.id" type="text" disabled>
         </td>
-    </tr>
+    </tr> 
     <tr>
         <th>UserName</th>
         <td>
             <input [(ngModel)]="request.userName" type="text" size="30"> 
         </td> 
-    </tr> 
+    </tr> -->
     <tr>
         <th>Description</th>
         <td>
@@ -38,7 +38,8 @@
     <tr>
         <th>DeliveryMode</th>
         <td>
-            <input [(ngModel)]="request.deliveryMode" type="text" size="30">
+        <input [(ngModel)]="request.deliveryMode" type="text" size="30">
+        
         </td>
     </tr>
     <!--<tr>
@@ -47,13 +48,13 @@
             <input [(ngModel)]="request.status" type="text" disabled>
         </td>
     </tr> -->
-    <tr>
+    <!--<tr>
         <th>Total</th>
         <td>
             <input [(ngModel)]="request.total" type="text" disabled>
         </td>
     </tr>
-    <!--<tr>
+    <tr>
         <th>SubmittedDate</th>
         <td>
             <input [(ngModel)]="request.submittedDate" type="text" disabled>
