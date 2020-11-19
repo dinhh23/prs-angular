@@ -1,1 +1,41 @@
-<p>request-lines works!</p>
+
+<app-menu></app-menu>
+<h3>[Request LineItems]</h3>
+
+<div>
+<table class="table table-bordered table-dark">
+    <tr>
+        <th>Id</th>
+        <th>UserName</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Total</th>
+    </tr>
+    <tr *ngFor="let request of requests">
+        <td>{{ request.id }}</td>
+        <td>{{ request.user.userName }} </td>
+        <td>{{ request.description }} </td>
+        <td>{{ request.status }} </td>
+        <td>{{ request.total | currency }} </td>
+    </tr>
+</table>
+</div>
+<h3>[Line Items]</h3>
+<div>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr *ngFor="let lineitem of lineitems">
+            <td>{{ lineitem.id }}</td>
+            <td>{{ lineitem.product.name }} </td>
+            <td>{{ lineitem.quantity }} </td>
+            <td>{{ lineitem.product.price | currency }} </td>
+            <td>{{ lineitem.quantity * lineitem.product.price | currency }} </td>
+        </tr>
+    </table>
+    </div>
