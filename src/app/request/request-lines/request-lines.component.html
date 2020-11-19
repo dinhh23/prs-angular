@@ -22,6 +22,10 @@
 </div>
 <h3>[Line Items]</h3>
 <div>
+    <a *ngIf="request" routerLink="/lines/create/{{request.id}}">Add New LineItem</a>
+    <!--/api/lines/request.id in postman-->
+</div>
+<div>
     <table class="table table-bordered table-dark">
         <tr>
             <th>Id</th>

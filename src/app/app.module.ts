@@ -29,6 +29,7 @@ import { RequestEditComponent } from './request/request-edit/request-edit.compon
 import { RequestCreateComponent } from './request/request-create/request-create.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { RequestLinesComponent } from './request/request-lines/request-lines.component';
+import { RequestLineCreateComponent } from './request/request-line-create/request-line-create.component';
 
 
 
@@ -62,6 +63,7 @@ import { RequestLinesComponent } from './request/request-lines/request-lines.com
     RequestCreateComponent,
     UserLoginComponent,
     RequestLinesComponent,
+    RequestLineCreateComponent,
     
     
   
