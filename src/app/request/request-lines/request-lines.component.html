@@ -11,7 +11,7 @@
         <th>Status</th>
         <th>Total</th>
     </tr>
-    <tr *ngFor="let request of requests">
+    <tr *ngIf="request">
         <td>{{ request.id }}</td>
         <td>{{ request.user.userName }} </td>
         <td>{{ request.description }} </td>
@@ -22,7 +22,7 @@
 </div>
 <h3>[Line Items]</h3>
 <div>
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-dark">
         <tr>
             <th>Id</th>
             <th>Product</th>

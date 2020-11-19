@@ -13,7 +13,7 @@ import { LineItemService } from '../line-item.service';
 })
 export class RequestLinesComponent implements OnInit {
 
-  requests: Request;
+  request: Request;
   lineitems: LineItem[] = [];
 
   constructor(
@@ -30,7 +30,7 @@ export class RequestLinesComponent implements OnInit {
     this.requestsvc.get(id).subscribe(
       res => {
         console.debug("Request:", res);
-        this.requests = res;
+        this.request = res;
       },
       err => { console.error(err);}
     );
