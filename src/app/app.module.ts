@@ -28,6 +28,7 @@ import { RequestDetailComponent } from './request/request-detail/request-detail.
 import { RequestEditComponent } from './request/request-edit/request-edit.component';
 import { RequestCreateComponent } from './request/request-create/request-create.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
+import { RequestLinesComponent } from './request/request-lines/request-lines.component';
 
 
 
@@ -60,6 +61,7 @@ import { UserLoginComponent } from './user/user-login/user-login.component';
     RequestEditComponent,
     RequestCreateComponent,
     UserLoginComponent,
+    RequestLinesComponent,
     
     
   
