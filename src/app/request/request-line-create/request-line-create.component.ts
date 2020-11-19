@@ -33,7 +33,7 @@ export class RequestLineCreateComponent implements OnInit {
       this.lineitemsvc.create(this.lineitem).subscribe (
         res => {
           console.debug("LineItem Created:", res);
-          this.router.navigateByUrl("/requests/list/${this.request.id}")
+          this.router.navigateByUrl("/requests/lines/{{request.id}}")
         },
         err => { console.error("Error creating LineItem: ", err);}
       )
