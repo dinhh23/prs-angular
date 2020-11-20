@@ -43,8 +43,13 @@ export class RequestLinesComponent implements OnInit {
     );
   }
 
-  
-  
-
-
+  submitForReview(): void {
+    this.requestsvc.review(this.request).subscribe(
+      res => {
+        console.debug("Request Submmitted:", res);
+        this.router.navigateByUrl("/requests/list")
+      },
+      err => { console.error("Request not submmitted:", err);}
+    )
+ }
 }

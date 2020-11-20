@@ -41,5 +41,10 @@
             <td>{{ lineitem.product.price | currency }} </td>
             <td>{{ lineitem.quantity * lineitem.product.price | currency }} </td>
         </tr>
+        <tr>
+            <td colspan="5">
+                <button (click)="submitForReview()" class="btn btn-success">Submit For Review</button>
+            </td>
+        </tr>
     </table>
     </div>
