@@ -53,3 +53,18 @@ export class RequestLinesComponent implements OnInit {
     )
  }
 }
+
+//refresh(): void {
+//  let id =this.route.snapshot.parms.id;
+//  this.requestsvc.get(id).subribe(
+//   res =>    err =>
+// )
+// }
+
+//delete(id: number): void {
+//  console.debug()
+//  this.lineitemssvc.remove(id).subscribe(
+//    res => {this.refresh();},
+//    err => {console.error(err);}
+//  );
+// }

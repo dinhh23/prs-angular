@@ -7,8 +7,13 @@ export class LineItem {
     product: Product = new Product();
     request: Request = new Request();
     quantity: number = 0;
+    
+    
+
 
     constructor() {
 
     }
 }
+
+//requestId: number = 0;

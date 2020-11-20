@@ -37,6 +37,7 @@ export class RequestLineCreateComponent implements OnInit {
         res => {
           console.debug("LineItem Created:", res);
           this.router.navigateByUrl("/requests/lines/" + this.request.id);
+         // this.router.navigateByUrl("/requests/lines/${this.request.id}");
         },
         err => { console.error("Error creating LineItem: ", err);}
       )
@@ -64,3 +65,6 @@ export class RequestLineCreateComponent implements OnInit {
   
   }
   
+
+  //this.lineitem.requestId = +this.rId; 
+
