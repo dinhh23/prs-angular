@@ -52,19 +52,24 @@ export class RequestLinesComponent implements OnInit {
       err => { console.error("Request not submmitted:", err);}
     )
  }
+
+
+refresh(): void {
+ let id =this.route.snapshot.params.id;
+  this.requestsvc.get(id).subscribe(
+   res => {console.debug("Refresh works:", res);
+   this.request = res;
+  },
+  err => {console.error("Refresh doesn't work:", err);}
+ );
+ }
+
+delete(lineitem: LineItem): void {
+  this.lineitemssvc.remove(lineitem).subscribe(
+    res => {console.debug("Lineitem removed:", res);
+    this.refresh();
+  },
+    err => {console.error("Error deleting lineitem", err);}
+  );
+ }
 }
-
-//refresh(): void {
-//  let id =this.route.snapshot.parms.id;
-//  this.requestsvc.get(id).subribe(
-//   res =>    err =>
-// )
-// }
-
-//delete(id: number): void {
-//  console.debug()
-//  this.lineitemssvc.remove(id).subscribe(
-//    res => {this.refresh();},
-//    err => {console.error(err);}
-//  );
-// }

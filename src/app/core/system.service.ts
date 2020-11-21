@@ -20,6 +20,8 @@ isAdmin(): boolean {
     return (this.loggedInUser == null) ? false : this.loggedInUser.admin;
 }
 
+
+
 checkLogin(): void {
     if (this.loggedInUser == null) {
         console.log("User is not logged in...redirecting to login.");

@@ -33,6 +33,7 @@
             <th>Quantity</th>
             <th>Price</th>
             <th>Total</th>
+            <th>Actions</th>
         </tr>
         <tr *ngFor="let lineitem of lineitems">
             <td>{{ lineitem.id }}</td>
@@ -40,6 +41,11 @@
             <td>{{ lineitem.quantity }} </td>
             <td>{{ lineitem.product.price | currency }} </td>
             <td>{{ lineitem.quantity * lineitem.product.price | currency }} </td>
+            <td>
+                <a routerLink="/lineitems/edit/{{lineitem.id}}">Edit</a> |
+                <button (click)="delete(lineitem)" class="btn btn-danger">Delete</button>
+                
+            </td>
         </tr>
         <tr>
             <td colspan="5">
@@ -48,3 +54,5 @@
         </tr>
     </table>
     </div>
+
+    

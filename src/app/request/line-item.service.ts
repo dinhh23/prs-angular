@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { LineItem } from './line-item.class';
+import { SystemService } from '../../app/core/system.service';
 
 const baseurl: string ="http://localhost:8080/api/lines/";
 
@@ -11,7 +12,8 @@ const baseurl: string ="http://localhost:8080/api/lines/";
 export class LineItemService {
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private systemsvc: SystemService
   ) { }
 
 // GetAll
@@ -37,11 +39,12 @@ create(lineitem: LineItem): Observable<LineItem> {
 // Delete
 remove(lineitem: LineItem): Observable<LineItem> {
   return this.http.delete(`${baseurl}${lineitem.id}`) as Observable<LineItem>;
-  
 }
 
 // Get line items by request id 
 linesForReq(id: number): Observable<LineItem[]> {
   return this.http.get(`${baseurl}for-req/${id}`) as Observable<LineItem[]>;
 }
+
+
 }
