@@ -40,8 +40,15 @@
         </tr>
         <tr>
             <td colspan="5">
-                <button (click)="submitForReview()" class="btn btn-success">Submit For Review</button>
+                <span>
+                <button (click)="approveRequest()" class="btn btn-success">Approve</button>
+                </span>
+                <span>
+                <button (click)="rejectRequest()" class="btn btn-danger">Reject</button>
+                </span>
             </td>
+            
+                
         </tr>
     </table>
     </div>
