@@ -64,7 +64,7 @@ refreshR(): void {
  );
  }
 
- // refresh the line items detail on the page without routing to a different page
+ // refresh the line items detail on the page without routing to a different page after deleting the line item
 refreshLI(): void {
  let id =this.route.snapshot.params.id;
   this.lineitemssvc.linesForReq(id).subscribe(

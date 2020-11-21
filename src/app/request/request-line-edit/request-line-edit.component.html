@@ -1,0 +1,27 @@
+<p>request-line-edit works!</p>
+
+<app-menu></app-menu>
+<h3>[Line Item Edit]</h3>
+
+<table *ngIf = "lineitem" class="table table-bordered table-dark">
+    <tr>
+        <th>Product</th>
+        <td>
+            <select [(ngModel)]="lineitem.product">
+                <option *ngFor = "let product of products" [ngValue]="product">{{product.name}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>Quantity</th>
+        <td>
+            <input [(ngModel)]="lineitem.quantity" type="number" min="0">
+        </td>
+    </tr>
+    <tr>
+        
+        <td colspan="2">
+            <button (click)="save()" class="btn btn-success">Save</button>
+        </td>
+    </tr>
+</table>

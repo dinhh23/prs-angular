@@ -1,6 +1,6 @@
 
 <app-menu></app-menu>
-<h3>[Request LineItems]</h3>
+<h3>[Request Detail]</h3>
 
 <div>
 <table class="table table-bordered table-dark">
@@ -20,7 +20,7 @@
     </tr>
 </table>
 </div>
-<h3>[Line Items]</h3>
+<h3>[Line Items Detail]</h3>
 <div>
     <a *ngIf="request" routerLink="/lines/create/{{request.id}}">Add New LineItem</a>
     <!--/api/lines/request.id in postman-->
@@ -42,7 +42,7 @@
             <td>{{ lineitem.product.price | currency }} </td>
             <td>{{ lineitem.quantity * lineitem.product.price | currency }} </td>
             <td>
-                <a routerLink="/lineitems/edit/{{lineitem.id}}">Edit</a> |
+                <a routerLink="/lines/edit/{{lineitem.id}}">Edit</a> |
                 <button (click)="delete(lineitem)" class="btn btn-danger">Delete</button>
                 
             </td>
@@ -55,4 +55,3 @@
     </table>
     </div>
 
-    
