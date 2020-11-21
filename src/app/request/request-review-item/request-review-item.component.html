@@ -1,0 +1,48 @@
+
+
+<app-menu></app-menu>
+<h3>[Review Request Detail]</h3>
+
+<div>
+<table class="table table-bordered table-dark">
+    <tr>
+        <th>Id</th>
+        <th>UserName</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Total</th>
+    </tr>
+    <tr *ngIf="request">
+        <td>{{ request.id }}</td>
+        <td>{{ request.user.userName }} </td>
+        <td>{{ request.description }} </td>
+        <td>{{ request.status }} </td>
+        <td>{{ request.total | currency }} </td>
+    </tr>
+</table>
+</div>
+<h3>[Review Line Items Detail]</h3>
+<div>
+    <table class="table table-bordered table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr *ngFor="let lineitem of lineitems">
+            <td>{{ lineitem.id }}</td>
+            <td>{{ lineitem.product.name }} </td>
+            <td>{{ lineitem.quantity }} </td>
+            <td>{{ lineitem.product.price | currency }} </td>
+            <td>{{ lineitem.quantity * lineitem.product.price | currency }} </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <button (click)="submitForReview()" class="btn btn-success">Submit For Review</button>
+            </td>
+        </tr>
+    </table>
+    </div>
+

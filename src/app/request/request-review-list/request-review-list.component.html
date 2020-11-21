@@ -18,5 +18,8 @@
         <td>{{ request.description }} </td>
         <td>{{ request.status }} </td>
         <td>{{ request.total | currency }} </td>
+        <td>
+            <a routerLink="/requests/review/{{request.id}}">Review</a> 
+        </td>     
     </tr>
 </table>
