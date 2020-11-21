@@ -1,0 +1,22 @@
+
+<app-menu></app-menu>
+<h3>[Request Reviews List]</h3>
+
+<div>
+<table class="table table-bordered table-dark">
+    <tr>
+        <th>Id</th>
+        <th>UserName</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Total</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let request of requests">
+        <td>{{ request.id }}</td>
+        <td>{{ request.user.userName }} </td>
+        <td>{{ request.description }} </td>
+        <td>{{ request.status }} </td>
+        <td>{{ request.total | currency }} </td>
+    </tr>
+</table>

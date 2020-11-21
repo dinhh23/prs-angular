@@ -30,6 +30,7 @@ import { UserLoginComponent } from './user/user-login/user-login.component';
 import { RequestLinesComponent } from './request/request-lines/request-lines.component';
 import { RequestLineCreateComponent } from './request/request-line-create/request-line-create.component';
 import { RequestLineEditComponent } from './request/request-line-edit/request-line-edit.component';
+import { RequestReviewListComponent } from './request/request-review-list/request-review-list.component';
 
 
 
@@ -64,6 +65,7 @@ import { RequestLineEditComponent } from './request/request-line-edit/request-li
     RequestLinesComponent,
     RequestLineCreateComponent,
     RequestLineEditComponent,
+    RequestReviewListComponent,
     
     
   
