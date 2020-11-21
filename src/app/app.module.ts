@@ -10,7 +10,6 @@ import { AboutComponent } from './core/about/about.component';
 import { E404Component } from './core/e404/e404.component';
 import { MenuComponent } from './menu/menu/menu.component';
 import { MenuItemComponent } from './menu-item/menu-item/menu-item.component';
-import { LineitemsComponent } from './lineitem/lineitems/lineitems.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
@@ -45,7 +44,6 @@ import { RequestLineEditComponent } from './request/request-line-edit/request-li
     E404Component,
     MenuComponent,
     MenuItemComponent,
-    LineitemsComponent,
     UserListComponent,
     UserDetailComponent,
     UserEditComponent,
