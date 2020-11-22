@@ -4,7 +4,7 @@
 <h3>[Review Request Detail]</h3>
 
 <div>
-<table class="table table-bordered table-dark">
+<table *ngIf="request" class="table table-bordered table-dark">
     <tr>
         <th>Id</th>
         <th>UserName</th>
@@ -39,16 +39,18 @@
             <td>{{ lineitem.quantity * lineitem.product.price | currency }} </td>
         </tr>
         <tr>
-            <td colspan="5">
+            <td colspan="1">
                 <span>
-                <button (click)="approveRequest()" class="btn btn-success">Approve</button>
-                </span>
-                <span>
-                <button (click)="rejectRequest()" class="btn btn-danger">Reject</button>
+                    <button (click)="approveRequest()" class="btn btn-success">Approve</button>
                 </span>
             </td>
-            
+            <td>
+                <span *ngIf="request.reasonForRejection">
+                    <button (click)="rejectRequest()" class="btn btn-danger" type="button">Reject</button>
+                </span>  
+                <input [(ngModel)]="request.reasonForRejection" type="text" placeholder="Reason for Rejection">
                 
+            </td>       
         </tr>
     </table>
     </div>

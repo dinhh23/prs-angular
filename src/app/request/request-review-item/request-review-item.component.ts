@@ -54,12 +54,11 @@ export class RequestReviewItemComponent implements OnInit {
     )
   }
 
-
   rejectRequest(): void {
     this.requestsvc.reject(this.request).subscribe(
       res => {
         console.debug("Request Rejected:", res);
-        this.router.navigateByUrl("/request/review")
+        this.router.navigateByUrl("/requests/review")
       },
       err => { console.error("Error rejecing request:", err);}
     )
