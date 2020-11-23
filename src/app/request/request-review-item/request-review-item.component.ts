@@ -60,7 +60,7 @@ export class RequestReviewItemComponent implements OnInit {
         console.debug("Request Rejected:", res);
         this.router.navigateByUrl("/requests/review")
       },
-      err => { console.error("Error rejecing request:", err);}
+      err => { console.error("Error rejecting request:", err);}
     )
   }
 }
